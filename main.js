@@ -17,7 +17,7 @@ menuICon.addEventListener('click',()=>{
 })
 
 closeICon.addEventListener('click',()=>{
-    navExpand.style.left = '-300px'
+    navExpand.style.left = '-350px'
     body.style.overflow = 'auto'
 })
 
