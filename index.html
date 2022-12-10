@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Responsive.css">
+  <script defer src="main.js"></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;margin-top: 65px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+  <nav class="navbar">
+    <span class="menu"><i class="bi bi-list"></i></span>
+    <img src="images/logo.svg" alt="logo" class="logo">
+      <ul class="navbar-expand">
+          <span class="close-menu"><img src="images/icon-close.svg" alt=""></span>
+          <li class="nav-item"><a href="#" class="nav-link">Collections</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+          <div class="nav-right-container">
+            <span class="cart-icon"><img src="images/icon-cart.svg" alt="carticon"><span class="amount-toggle">3</span></span>
+            <img  class="profile-img" src="images/image-avatar.png" alt="profile">
+          </div>
+  </nav>
+
+    <div class="cart-container">
+      <h3>Cart</h3>
+      <div class="product">
+        <h4 class="empty-title">Your Cart is Empty</h4>
+      </div>
+
+      <button type="button" class="checkout">Checkout</button>
+    </div>
+    <div class="close-cartDiv"></div>
+
+
+<div class="product-container">
+  <div class="right-side">
+      <div class="details">
+      <h3 class="small-name">Sneaker Company</h3>
+      <h1 class="product-name">  Fall Limited Edition Sneakers</h1>
+      <p class="details-p">  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="prices-container">
+          <div class="main-price"> $<span class="price">125.00</span></div>
+          <div class="discount">  50%</div>
+          <div class="prev-price"> $250.00</div>
+        </div>
+        <div class="add-to-cart-container">
+          <div class="amount-container">
+            <div class="plus">+</div>
+            <div class="display">0</div>
+            <div class="mines">-</div>
+          </div>
+          <button type="button" class="add-to-cart-button"><span><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg></span>Add to cart</button>
+        </div>
+      </div>
+  </div>
+
+    <div class="left-side">
+      <div class="main-image-container">
+     
+        <img src="/images/image-product-1.jpg" alt="" id="big-image" class="main-image main-img-mob">
+        <span class="prev-mob"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></span>
+        <span class="next-mob"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></span>
+      </div>
+      <div class="small-img-container">
+        <ul class="small-images">
+        <li><img src="images/image-product-1-thumbnail.jpg" class="small-imagess selected"  width="100px" alt=""></li>
+        <li><img src="images/image-product-2-thumbnail.jpg" class="small-imagess " width="100px"  alt=""></li>
+        <li><img src="images/image-product-3-thumbnail.jpg" class="small-imagess " width="100px"  alt=""></li>
+        <li><img src="images/image-product-4-thumbnail.jpg" class="small-imagess" width="100px"  alt=""></li>
+      </ul>
+      </div>
+
+    </div>
+</div>
+
+  <div class="images-popup">
+      <span class="close-icon-popup"><i class="bi bi-x-lg"></i></span>
+        <div class="mainImage-container-popup">
+          <img src="/images/image-product-1.jpg" alt="" id="main-image-popup" class="main-image">
+        </div>
+        <span class="prev"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></span>
+        <span class="next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></span>
+        <div class="smallImg-container-popup">
+          <ul class="small-images">
+          <li><img src="images/image-product-1-thumbnail.jpg" class="small-imagess-popup" width="100px"  alt=""></li>
+          <li><img src="images/image-product-2-thumbnail.jpg" class="small-imagess-popup" width="100px"  alt=""></li>
+          <li><img src="images/image-product-3-thumbnail.jpg" class="small-imagess-popup" width="100px"  alt=""></li>
+          <li><img src="images/image-product-4-thumbnail.jpg" class="small-imagess-popup" width="100px"  alt=""></li>
+        </ul>
+        </div>
+  
+      </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Mahfoodh">Mahfoodh Salem</a>.
+  </div>
+</main>
+</body>
+</html>
