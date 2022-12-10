@@ -212,7 +212,7 @@ const nextMob = document.querySelector('.next-mob')
 const prevMob = document.querySelector('.prev-mob')
 const mainImgMob = document.querySelector('.main-img-mob')
 
-function next(){
+function nextmob(){
     if(countImg == 4){
         countImg = 1
     }else{
@@ -221,7 +221,7 @@ function next(){
     mainImgMob.src = `images/image-product-${countImg}.jpg`
 }
 
-function prev(){
+function prevmob(){
     if(countImg == 1){
         countImg = 4
     }else{
@@ -234,5 +234,5 @@ function prev(){
 
 
 
-nextMob.addEventListener('click', next)
-prevMob.addEventListener('click', prev)
+nextMob.addEventListener('click', nextmob)
+prevMob.addEventListener('click', prevmob)
